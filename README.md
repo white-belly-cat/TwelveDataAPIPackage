@@ -1,2 +1,2 @@
 # TwelveDataAPIPackage
-API package for TwelveData on Swift programming lang
+API package for TwelveData on Swift programming language.
