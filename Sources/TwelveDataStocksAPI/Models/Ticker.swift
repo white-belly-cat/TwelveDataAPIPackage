@@ -54,13 +54,13 @@ public struct Ticker: Codable, Hashable, Equatable, Identifiable {
     public init(
         
         symbol: String?,
-        instrumentName: String?,
-        exchange: String?,
-        micCode: String?,
-        exchangeTimezone: String?, 
-        instrumentType: String?,
-        country: String?,
-        currency: String?
+        instrumentName: String? = nil,
+        exchange: String? = nil,
+        micCode: String? = nil,
+        exchangeTimezone: String? = nil, 
+        instrumentType: String? = nil,
+        country: String? = nil,
+        currency: String? = nil
         
     ){
         
