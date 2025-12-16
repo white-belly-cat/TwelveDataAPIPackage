@@ -29,7 +29,7 @@ public struct Ticker: Codable, Hashable, Equatable, Identifiable {
     
     public let id = UUID()
     
-    public let symbol: String?
+    public let symbol: String
     public let instrumentName: String?
     public let exchange: String?
     public let micCode: String?
@@ -53,7 +53,7 @@ public struct Ticker: Codable, Hashable, Equatable, Identifiable {
     
     public init(
         
-        symbol: String?,
+        symbol: String,
         instrumentName: String? = nil,
         exchange: String? = nil,
         micCode: String? = nil,
