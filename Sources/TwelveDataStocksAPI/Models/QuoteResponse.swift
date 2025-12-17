@@ -28,25 +28,25 @@ public struct Quote: Codable {
     public let fiftyTwoWeek: FiftyTwoWeekData?
     
     public init(
-        symbol: String?,
-        name: String?,
-        exchange: String?,
-        micCode: String?,
-        currency: String?,
-        datetime: Date?,
-        timestamp: Date?,
-        lastQuoteAt: Date?,
-        open: String?,
-        high: String?,
-        low: String?,
-        close: String?,
-        volume: String?,
-        previousClose: String?,
-        change: String?,
-        changePercent: String?,
-        averageVolume: String?,
-        isMarketOpen: Bool?,
-        fiftyTwoWeek: FiftyTwoWeekData?
+        symbol: String? = nil,
+        name: String? = nil,
+        exchange: String? = nil,
+        micCode: String? = nil,
+        currency: String? = nil,
+        datetime: Date? = nil,
+        timestamp: Date? = nil,
+        lastQuoteAt: Date? = nil,
+        open: String? = nil,
+        high: String? = nil,
+        low: String? = nil,
+        close: String? = nil,
+        volume: String? = nil,
+        previousClose: String? = nil,
+        change: String? = nil,
+        changePercent: String? = nil,
+        averageVolume: String? = nil,
+        isMarketOpen: Bool? = nil,
+        fiftyTwoWeek: FiftyTwoWeekData? = nil
     ) {
         self.symbol = symbol
         self.name = name
