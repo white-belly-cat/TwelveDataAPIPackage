@@ -7,7 +7,7 @@ public struct Quote: Codable {
     
     public let id = UUID() //id для SwiftUI
     
-    public let symbol: String?
+    public let symbol: String
     public let name: String?
     public let exchange: String?
     public let micCode: String?
@@ -28,7 +28,7 @@ public struct Quote: Codable {
     public let fiftyTwoWeek: FiftyTwoWeekData?
     
     public init(
-        symbol: String? = nil,
+        symbol: String,
         name: String? = nil,
         exchange: String? = nil,
         micCode: String? = nil,
@@ -97,7 +97,7 @@ public struct Quote: Codable {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        symbol = try container.decodeIfPresent(String.self, forKey: .symbol)
+        symbol = try container.decodeIfPresent(String.self, forKey: .symbol) ?? ""
         name = try container.decodeIfPresent(String.self, forKey: .name)
         exchange = try container.decodeIfPresent(String.self, forKey: .exchange)
         micCode = try container.decodeIfPresent(String.self, forKey: .micCode)
